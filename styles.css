@@ -1,0 +1,106 @@
+/* Primary Colors */
+/* Neutral Colors */
+/* Typography */
+body {
+  font-family: "poppins", "sans serif";
+  font-size: 15px;
+  background-color: hsl(0, 0%, 98%);
+  margin: 0px;
+  padding: 0;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 1rem 3rem 1rem;
+}
+
+h1,
+h2 {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-weight: 200;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 600;
+}
+
+h3,
+.description {
+  font-size: 1.2rem;
+}
+
+p {
+  color: hsl(229, 6%, 66%);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 6px;
+  text-align: start;
+  padding: 1rem;
+  background-color: white;
+  border-top: 0.33rem solid;
+  margin-bottom: 1rem;
+}
+
+article p {
+  margin: 0;
+}
+
+embed {
+  margin-top: 1.5rem;
+  align-self: flex-end;
+}
+
+#supervisor {
+  border-top-color: hsl(180, 62%, 55%);
+}
+
+#teamBuilder {
+  border-color: hsl(0, 78%, 62%);
+}
+
+#karma {
+  border-color: hsl(34, 97%, 64%);
+}
+
+#calculator {
+  border-color: hsl(212, 86%, 64%);
+}
+
+@media screen and (min-width: 1440px) {
+  .description {
+    text-align: center;
+  }
+  .desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .article_container {
+    flex: 1;
+    margin: 1rem;
+  }
+  article {
+    width: 20rem;
+    height: 15rem;
+    margin: 0;
+  }
+  .two article {
+    margin: 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

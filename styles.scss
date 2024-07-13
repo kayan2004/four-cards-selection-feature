@@ -1,0 +1,116 @@
+/* Primary Colors */
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+/* Neutral Colors */
+$verydarkblue: hsl(234, 12%, 34%);
+$grayishblue: hsl(229, 6%, 66%);
+$verylightgray: hsl(0, 0%, 98%);
+
+/* Typography */
+$font-primary: "poppins", "sans serif";
+$font-size-small: 15px;
+$font-size-medium: 1.2rem;
+$font-size-large: 1.5rem;
+$font-weight-small: 200;
+$font-weight-medium: 400;
+$font-weight-bold: 600;
+
+body {
+  font-family: $font-primary;
+  font-size: $font-size-small;
+
+  background-color: $verylightgray;
+  margin: 0px;
+  padding: 0;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 3.5rem 1rem 3rem 1rem;
+}
+
+h1,
+h2 {
+  font-size: $font-size-large;
+}
+h1 {
+  font-weight: $font-weight-small;
+  margin-bottom: 0;
+}
+h2 {
+  margin: 0;
+  font-weight: $font-weight-bold;
+}
+h3,
+.description {
+  font-size: $font-size-medium;
+}
+
+p {
+  color: $grayishblue;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 6px;
+  text-align: start;
+  padding: 1rem;
+
+  background-color: white;
+  border-top: 0.33rem solid;
+
+  margin-bottom: 1rem;
+}
+article p {
+  margin: 0;
+}
+embed {
+  margin-top: 1.5rem;
+  align-self: flex-end;
+}
+#supervisor {
+  border-top-color: $cyan;
+}
+#teamBuilder {
+  border-color: $red;
+}
+#karma {
+  border-color: $orange;
+}
+#calculator {
+  border-color: $blue;
+}
+
+@media screen and (min-width: 1440px) {
+  .description {
+    text-align: center;
+  }
+  .desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .article_container {
+    flex: 1;
+    margin: 1rem;
+  }
+  article {
+    width: 20rem;
+    height: 15rem;
+    margin: 0;
+  }
+  .two article {
+    margin: 0.5rem;
+  }
+}
